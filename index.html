@@ -11,18 +11,15 @@
     body {
       padding-top: 70px;
     }
-
     .navbar-default {
       height: 65px;
     }
-
     .navbar-default .navbar-brand {
       padding-top: 0;
       padding-bottom: 0;
       line-height: 65px;
       font-size: 18pt;
     }
-
     .navbar-nav>li>a {
       padding-top: 0;
       padding-bottom: 0;
@@ -58,9 +55,8 @@
             Driven by the findings, we propose to reconsider the collaboration support of CSSes from a novel perspective of <i>operations</i> without using any locks. To enable this idea, we design intelligent approaches to the inference and transformation of users' editing operations, as well as optimizations to the maintenance of a file's historic versions. We develop an open-source system, UFC2 (User-Friendly Collaborative Cloud), to embody our design, which can avoid most (98%) conflicts with little (2%) time overhead.
           </p>
           <br>
-		  <h2 id="download">Code Download</h2>
-          <!--<h2 id="download">Code and Raw Data Download</h2>
-          <p style="font-size: 16px">
+          <h2 id="download">Code and Raw Data Download</h2>
+          <!--<p style="font-size: 16px">
             Our paper has been conditionally accepted for
             <a href="https://www.sigmobile.org/mobisys/2019/">MobiSys 2019</a>.<br>
           </p>-->
@@ -69,13 +65,80 @@
             We provide the customization code of UFC2 <a
               href="https://github.com/ufc2/UFC2">on GitHub</a>.<br>
           </p>
-          <!--<h4>Raw Data</h4>
+                  <table border="1">
+			<tr>
+			<td rowspan=2>Operation Inference &  Transformation</td>
+			<td>diff_match_patch.py	</td>
+			</tr>
+			<tr>
+			<td>operation.py	</td>
+			</tr>
+			<tr>
+			<td rowspan=6>Server Codes</td>
+			<td>Start.py</td>
+			</tr>
+			<tr>
+			<td>GRPCServer_impl.py</td>
+			</tr>
+			<tr>
+			<td>GRPCServer_pb2.py</td>
+			</tr>
+			<tr>
+			<td>GRPCServer_pb2_grpc.py</td>
+			</tr>
+			<tr>
+			<td>GRPCServer.proto</td>
+			</tr>
+			<tr>
+			<td>user_session.py</td>
+			</tr>
+			<tr>
+			<td rowspan=5>Maintenance of Historic Versions</td>
+			<td>cdc.py	</td>
+			</tr>
+			<tr>
+			<td>ocdc.py	</td>
+			</tr>
+			<tr>
+			<td>vnode.py</td>
+			</tr>
+			<tr>
+			<td>metadata.py</td>
+			</tr>
+			<tr>
+			<td>versions.py	</td>
+			</tr>
+			<tr>
+			<td rowspan=2>AWS S3 Management</td>
+			<td>s3connector.py	</td>
+			</tr>
+			<tr>
+			<td>s3operator.py	</td>
+			</tr>
+			<tr>
+			<td rowspan=5>Other</td>
+			<td>config.py	</td>
+			</tr>
+			<tr>
+			<td>chunkcache.py	</td>
+			</tr>
+			<tr>
+			<td>cache.py	</td>
+			</tr>
+			<tr>
+			<td>global_variables.py	</td>
+			</tr>
+			<tr>
+			<td>utils.py	</td>
+			</tr>
+		  </table>
+          <h4>Raw Data</h4>
           <p style="font-size: 16px">
-            Our collected real-world collaboration traces are hosted in <a href="https://drive.google.com/file/d/1nz1ah59aTkI7WJR5kwCdmaP4mN88Pcrg/view?usp=sharing">Google Drive</a> (13 GB in archive).
+            Our collected real-world collaboration traces are hosted in <a href="https://drive.google.com/file/d/1nz1ah59aTkI7WJR5kwCdmaP4mN88Pcrg/view?usp=sharing">Google Drive</a>.
           </p>
           <p style="font-size: 16px">
             Please cite this study when using the data.
-          </p>-->
+          </p>
           <br>
           <h2 id="contact">Contact</h2>
           <p>
